@@ -1,15 +1,41 @@
 // Reverse a string in C using strrev
+// #include <stdio.h>
+// #include <string.h>
+// int main()
+// {
+//     char s[100];
+//     printf("Enter a string to reverse\n");
+//     gets(s);
+//     strrev(s);
+//     printf("Reverse of the string: %s\n", s);
+//     return 0;
+// }
+
+// String reversal without strrev function
 #include <stdio.h>
-#include <string.h>
 int main()
 {
-    char s[100];
-    printf("Enter a string to reverse\n");
+    char s[1000], r[1000];
+    int begin, end, count = 0;
+
+    printf("Input a string\n");
     gets(s);
-    strrev(s);
-    printf("Reverse of the string: %s\n", s);
+
+    // Calculating string length
+
+    while (s[count] != '\0')
+        count++;
+
+    end = count - 1;
+
+    for (begin = 0; begin < count; begin++)
+    {
+        r[begin] = s[end];
+        end--;
+    }
+
+    r[begin] = '\0';
+
+    printf("%s\n", r);
     return 0;
 }
-
-
-

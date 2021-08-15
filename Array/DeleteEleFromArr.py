@@ -34,4 +34,3 @@ if __name__ == '__main__':
 	print("Modified array is")
 	for i in range(n):
 		print(arr[i], end = " ")
-		

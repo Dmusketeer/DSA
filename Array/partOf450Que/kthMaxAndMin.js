@@ -1,3 +1,6 @@
+
+// A simple solution is to sort the given array using a O(N log N) sorting algorithm like Merge Sort, Heap Sort, etc, and return the element at index k-1 in the sorted array. 
+// Time Complexity of this solution is O(N Log N)
 function kthSmallestItem(arr, n, k) {
     arr.sort((a, b) => a - b);
     return arr[k - 1]

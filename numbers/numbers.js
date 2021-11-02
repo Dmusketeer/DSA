@@ -42,7 +42,6 @@ console.log(numberEqual(0.2, 0.2));
 // Number.MIN_SAFE_INTEGER [returns the smallest integer]
 // Number.MIN_VALUE [returns the smallest floating-point number possible.]
 // Number.MAX_VALUE [ returns the largest floating-point number possible.]
-
 console.log("Largest integer : ", Number.MAX_SAFE_INTEGER);
 console.log("Smallest integer : ", Number.MIN_SAFE_INTEGER);
 console.log("Min floating point value : ", Number.MIN_VALUE);

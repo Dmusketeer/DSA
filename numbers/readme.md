@@ -28,3 +28,23 @@ will be smaller than Number.EPSILON.
 - Number.MIN_SAFE_INTEGER [returns the smallest integer]
 - Number.MIN_VALUE [returns the smallest floating-point number possible.]
 - Number.MAX_VALUE [ returns the largest floating-point number possible.]
+
+
+
+## Infinity
+
+- The only thing greater than Number.MAX_VALUE is Infinity, and the only thing smaller 
+than Number.MAX_SAFE_INTEGER is <b>-</b> Infinity.
+    - 1) Infinity > Number.MAX_SAFE_INTEGER; // true
+    - 2) -Infinity < Number.MAX_SAFE_INTEGER // true;
+    - 3) -Infinity -32323323 == -Infinity -1; // true
+
+    This evaluates to true because nothing can go smaller than -Infinity
+
+
+
+## Size Summary
+- This inequality summarizes the size of JavaScript numbers from smallest (left) to 
+largest (right): <br/>
+        `-Infinity < Number.MIN_SAFE_INTEGER < Number.MIN_VALUE < 0 < Number.MAX_
+SAFE_IN- TEGER < Number.MAX_VALUE < Infinity`

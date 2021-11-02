@@ -46,3 +46,9 @@ console.log("Largest integer : ", Number.MAX_SAFE_INTEGER);
 console.log("Smallest integer : ", Number.MIN_SAFE_INTEGER);
 console.log("Min floating point value : ", Number.MIN_VALUE);
 console.log("Max floating point value : ", Number.MAX_VALUE);
+
+
+// Random Number generator
+// Math.random() * (max - min + 1) ) + min
+console.log("Random float Number : ", Math.random() * (100 - 0 + 1) + 0); //between 0 to 100 both included
+console.log("Random Integer Number : ", Math.floor(Math.random() * (100 - 0 + 1) + 0)); //between 0 to 100  both included

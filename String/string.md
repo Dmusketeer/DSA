@@ -14,7 +14,4 @@ Array of Character is basically  a string.
 char name[] = "Dheeraj" // created in stack memory
 char *name = "Dheeraj" // created in heap memory
 
-
-
-
 ## length of string:
